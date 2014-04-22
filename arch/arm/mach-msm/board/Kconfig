@@ -1,0 +1,24 @@
+choice
+	depends on ARCH_MSM8974
+	prompt "MSM8974_MTP Based Board"
+
+config ARCH_MSM8974_ORIG
+	bool "Original ARCH_MSM8974"
+	help
+	  Support for Qualcomm MSM8974AB MTP original eval board.
+
+config BOARD_ZTEMT_NX601J
+	bool "ZTEMT NX601J"
+	help
+	  Support for the ZTEMT NX601J board.
+
+config BOARD_ZTEMT_NX504J
+	bool "ZTEMT NX504J"
+	help
+	  Support for the ZTEMT NX504J board.
+endchoice
+
+config ZTEMT_RESTART
+	bool "ZTEMT restart"
+	help
+	  Support for the ZTEMT restart
